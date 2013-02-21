@@ -1,0 +1,40 @@
+
+<body>
+<div id="topbar">
+<ul id="topnav">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+  <%= link_to 'About us', :action=>'about_us'%>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   
+  <%= link_to 'Dominus', :action=>'me_us'%>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   
+
+  <%= link_to 'Contact us', :action=>'contact_us'%>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   
+  <%= link_to 'Blogger Information', :action=>'blogger_information'%>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br/>
+</body>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <%= link_to article.title, article_path(article) %>
+    </li>
+  <% end %><br/>
+  
+</ul>
+<%= link_to "New Article", new_article_path, :class => "new_article" %><br/>
+<br/>
+<br/>
+
+<br/>
+<br/>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<br/>
+<br/>
+
+<br/>
+<br/>
+
+
+
